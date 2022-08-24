@@ -1,0 +1,5 @@
+In the terminal:
+mongo: 	    will start the shell so you can perform CRUD
+mongod: 	starts a server
+
+- when ever you see a "$" in the shell, mongodb will view whatever it's attached to as an operator

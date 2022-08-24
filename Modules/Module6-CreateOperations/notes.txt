@@ -1,0 +1,25 @@
+Insert Operations: 
+    db.collection.insert()
+        not recommended. can take one({}) or many({}, {}, {})
+    db.collection.insertOne()
+        can only take one ({})
+    db.collection.insertMany()
+        takes many as an array ([{}, {}, {}])
+
+Option:
+    db.collection.insertMany([{}, {}, {}], {ordered: false})
+        - if one document is "corrupt" the code will still run and insert "uncorrupted" documents
+        - default is {ordered: true} if it encounters one "corrupted" doc, it won't check the docs after it and ends the program
+
+Atomicity:
+    - mongodb is automic on the document level
+    - if you insert a doc and one of the fields (say "hobbies") fails, but "name" and "age" didn't have any problems, the doc
+      doesn't get saved as a whole
+
+Importing Data:
+    mongoimport *file* -d *database* -c *collection* --*data type* --drop
+        -d: creates db on the fly
+        -c: creates collection
+        --*data type*: ex - jsonArray
+        --drop: drops the collection if it already exists and replaces it with data
+                default is to just append new data to the existing collection

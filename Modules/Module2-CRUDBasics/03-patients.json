@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Cristine Schnitzel",
+        "age": 67,
+        "history": [
+            {
+                "disease": "cold",
+                "treatment": "advil"
+            }
+        ]
+    },
+    {
+        "name": "Max Smit",
+        "age": 9,
+        "history": [
+            {
+                "disease": "cough",
+                "treatment": "cough syrup"
+            }
+        ]
+    },  
+    {
+        "name": "Dave Daniel",
+        "age": 32,
+        "history": [
+            {
+                "disease": "flu",
+                "treatment": "antibiotics"
+            }
+        ]
+    }
+]

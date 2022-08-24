@@ -1,0 +1,22 @@
+- there are 2 things you can do when you structure data...
+    1. nest the documents:
+        {
+            userName: 'Cristiana',
+            age: 12,
+            address: {
+                street: 'Magnolia Street',
+                city: 'Issaquah'
+            }
+        }
+    2. reference other documents:
+        {
+            userName: 'Cristiana',
+            favBooks: ['id1', 'id2']
+        }
+        {
+            _id: 'id1',
+            name: 'The Westing Game'
+        }
+
+- for one-to-one relationships, you'll likely want to go with #1
+    ex: each person has their own medical history, no one else in a hospital will have the same medical history

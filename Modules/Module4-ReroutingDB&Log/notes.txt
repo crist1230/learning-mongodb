@@ -1,0 +1,4 @@
+Change paths: 
+    - have to specify path every time you start the server with mongod or it defaults
+    mongod --dbpath/--logpath *path*
+        the path needs to have forward slashes
